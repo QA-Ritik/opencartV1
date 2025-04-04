@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="utilities.ExtentReportUtility"/>
+    </listeners>
+    <test name="test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="os" value="mac"/>
+        <classes>
+        <class name="testCases.TC001_AccountRegistrationTest"></class>
+            <class name="testCases.TC002_UserLoginTest"></class>
+         <!--   <class name="testCases.TC003_UserLoginDDT"></class> -->
+        </classes>
+    </test>
+</suite>

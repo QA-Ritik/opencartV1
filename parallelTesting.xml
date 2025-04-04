@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite" thread-count="3" parallel="tests">
+    <listeners>
+        <listener class-name="utilities.ExtentReportUtility"/>
+    </listeners>
+
+    <test name="chromeTest">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="os" value="mac"/>
+        <classes>
+            <class name="testCases.TC001_AccountRegistrationTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="os" value="mac"/>
+        <classes>
+            <class name="testCases.TC001_AccountRegistrationTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="safariTest">
+        <parameter name="browser" value="safari"/>
+        <parameter name="os" value="mac"/>
+        <classes>
+            <class name="testCases.TC001_AccountRegistrationTest">
+            </class>
+        </classes>
+    </test>
+</suite>
